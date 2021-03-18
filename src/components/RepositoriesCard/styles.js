@@ -17,4 +17,14 @@ export const Wrapper = styled.div`
     span {
         margin-left: 1.2rem;
     }
+
+    @media(max-width: 1080px) {
+        width: 48%;
+    }
+
+    @media(max-width: 720px) {
+        width: 100%;
+        height: 4.8rem;
+        font-size: .7rem;
+    }
 `

@@ -19,6 +19,17 @@ export const Container = styled.div`
     height: 20%;
     background-color: #fff;
     border-radius: 10px;
+
+    @media(max-width: 1080px) {
+        width: 44%;
+        height: 8.5rem;
+    }
+
+    @media(max-width: 720px) {
+        width: 60%;
+        height: 7rem;
+        font-size: .7rem;
+    }
 `
 
 export const CloseButton = styled.div`
@@ -49,7 +60,7 @@ export const User = styled.div`
     width: 80%;
     display: flex;
     align-items: center;
-    margin-left: 2rem;
+    margin-left: 1rem;
 
     img {
         width: 6%;
@@ -59,6 +70,18 @@ export const User = styled.div`
 
     span {
         margin-left: .2rem;
+    }
+
+    @media(max-width: 1080px) {
+        img {
+            width: 1.2rem;
+        }
+    }
+
+    @media(max-width: 720px) {
+        img {
+            width: 1rem;
+        }
     }
 `
 
@@ -72,5 +95,13 @@ export const UserInfos = styled.div`
 
     p {
         margin: 0 2rem;
+    }
+
+    @media(max-width: 720px) {
+        margin-left: 1rem;
+
+        p {
+            margin: 0 1rem;
+        }
     }
 `

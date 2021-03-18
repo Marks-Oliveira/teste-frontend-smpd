@@ -46,7 +46,7 @@ const UserSearchPage = () => {
 
     return (
         <S.Wrapper>
-            <Header />
+            <div><Header /></div>
             <S.Container>
                 <S.ContainerHeader>
                     <h3>Buscar usuário no Github</h3>
@@ -82,14 +82,14 @@ const UserSearchPage = () => {
                         </Button>
                     </S.InputUser>
                 </section>
-                {user === "" ? 
+                {user === "" ? (
                     <S.LogoGithub>
                         <img 
                             src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-512.png" 
                             alt="logo"
                         />
                     </S.LogoGithub> 
-                    : null
+                ) : null
                 }
                 <S.UserInfos visible={user}>
                     <S.UserAvatar>
@@ -103,9 +103,9 @@ const UserSearchPage = () => {
                         />
                     </S.UserAvatar>
                     <S.Infos>
-                        <span><strong>Nome:</strong> {user.name}</span>
-                        <span><strong>Repositórios:</strong> {user.public_repos}</span>
-                        <span><strong>Seguidores:</strong> {user.followers}</span>
+                        <span><em><strong>Nome:</strong> {user.name}</em></span>
+                        <span><em><strong>Repositórios:</strong> {user.public_repos}</em></span>
+                        <span><em><strong>Seguidores:</strong> {user.followers}</em></span>
                     </S.Infos>
                 </S.UserInfos>
                 <S.RepositoriesButton visible={user}>

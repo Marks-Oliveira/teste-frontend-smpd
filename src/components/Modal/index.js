@@ -19,8 +19,8 @@ const Modal = ({modalItem}) => {
                         <span><em>/{modalItem.full_name}</em></span>
                     </S.User>
                     <S.UserInfos>
-                        <p><strong>Forks:</strong> <em>{modalItem.forks}</em></p>
-                        <p><strong>Stars:</strong> <em>{modalItem.stargazers_count}</em></p>
+                        <p><em><strong>Forks:</strong> {modalItem.forks}</em></p>
+                        <p><em><strong>Stars:</strong> {modalItem.stargazers_count}</em></p>
                     </S.UserInfos>
                 </S.Content>
             </S.Container>

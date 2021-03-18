@@ -14,6 +14,16 @@ export const Container = styled.section`
     border: 1px solid black;
     border-radius: 10px;
     position: relative;
+
+    @media(max-width: 1080px) {        
+        width: 50%;
+        height: 44.5%;
+    }
+
+    @media(max-width: 720px) {
+        width: 80%;
+        height: 44.2%;
+    }
 `
 
 export const ContainerHeader = styled.div`
@@ -27,6 +37,16 @@ export const ContainerHeader = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    h2 {
+        @media(max-width: 1080px) {
+            font-size: 1.3rem;
+        }
+        
+        @media(max-width: 720px) {
+            font-size: 1.2rem;
+        }
+    }
 `
 
 export const Content = styled.div`

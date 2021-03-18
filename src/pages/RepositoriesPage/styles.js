@@ -22,6 +22,22 @@ export const LogoGithub = styled.div`
         padding-left: 5px;
         font-size: 1.2rem;
     }
+
+    @media(max-width: 1080px) {
+        font-size: .8rem;
+
+        img {
+            width: 1.5rem;
+        }
+    }
+
+    @media(max-width: 720px) {
+        font-size: .6rem;
+
+        img {
+            width: 1.5rem;
+        }
+    }
 `
 
 export const Cards = styled.section`
@@ -33,4 +49,17 @@ export const Cards = styled.section`
     margin: 0 4rem;
     margin-top: 1rem;
     padding-bottom: 2rem;
+
+    @media(max-width: 1080px) {
+        width: 100%;
+        margin: 0;
+        padding: 0 4rem;
+    }
+
+    @media(max-width: 720px) {
+        width: 100%;
+        margin: 0;
+        padding: 0 4rem;
+        justify-content: center;
+    }
 `

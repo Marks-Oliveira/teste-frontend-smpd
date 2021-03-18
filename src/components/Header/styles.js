@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.header`
-    width: 100%;
+    width: 100vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -10,6 +10,10 @@ export const Wrapper = styled.header`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @media(max-width: 1080px) {
+        width: 100%;
+    }
 `
 
 export const User = styled.article `
@@ -22,5 +26,9 @@ export const User = styled.article `
     span {
         margin-bottom: 5px;
         margin-left: 4px;
+    }
+
+    @media(max-width: 720px) {
+        margin-right: 1.5rem;
     }
 `

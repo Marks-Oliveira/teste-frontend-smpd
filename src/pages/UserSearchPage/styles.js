@@ -15,7 +15,16 @@ export const Container = styled.section`
     border: 1px solid black;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+
+    @media(max-width: 1080px) {
+        width: 55%;
+    }
+
+    @media(max-width: 720px) {
+        width: 80%;
+        height: 50%;
+    }
 `
 
 export const ContainerHeader = styled.div`
@@ -28,6 +37,14 @@ export const ContainerHeader = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    @media(max-width: 1080px) {
+        font-size: .8rem;
+    }
+
+    @media(max-width: 720px) {
+        font-size: .7rem;
+    }
 `
 
 export const InputUser = styled.div`
@@ -35,6 +52,11 @@ export const InputUser = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    @media(max-width: 720px) {
+        padding: 0 .5rem;
+        flex-direction: column;
+    }
 `
 
 export const LogoGithub = styled.div`
@@ -42,11 +64,12 @@ export const LogoGithub = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: .8rem;
 
     img {
         width: 30%;
-        height: 60%;
-        opacity: .4;
+        height: 65%;
+        opacity: .3;
     }
 `
 
@@ -64,6 +87,14 @@ export const UserAvatar = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media(max-width: 1080px) {
+        width: 50%;
+    }
+
+    @media(max-width: 720px) {
+        width: 60%;
+    }
 `
 
 export const Infos = styled.div`
@@ -77,6 +108,11 @@ export const Infos = styled.div`
     span {
         padding: .5rem 0;
         font-size: 1.1rem;
+
+        @media(max-width: 720px) {
+            font-size: .7rem;
+            padding-right: .1rem;
+        }
     }
 `
 
