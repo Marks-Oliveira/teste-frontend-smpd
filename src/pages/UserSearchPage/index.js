@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router';
-import { useParams } from "react-router";
+import { useHistory, useParams } from 'react-router';
 
 import Header from '../../components/Header';
 import api from '../../services/api';
