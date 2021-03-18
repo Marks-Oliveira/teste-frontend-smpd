@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
     height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: ${props => props.visible === true ? 'hidden' : 'visible'};
 `
 
 export const LogoGithub = styled.div`

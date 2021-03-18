@@ -8,6 +8,7 @@ import RepositoriesCard from '../../components/RepositoriesCard';
 import * as S from './styles';
 
 const RepositoriesPage = () => {
+    const [divHidden, setDivHidden] = useState(false);
     const [repos, setRepos] = useState("");
     const history = useHistory();
     const pathParams = useParams();
@@ -32,8 +33,12 @@ const RepositoriesPage = () => {
         }
     };
 
+    const modalVisible = () => {
+        setDivHidden(!divHidden);
+    };
+
     return (
-        <S.Wrapper>
+        <S.Wrapper visible={divHidden}>
             <Header />
             <S.LogoGithub>
                 <img 
@@ -45,7 +50,11 @@ const RepositoriesPage = () => {
             <S.Cards>
                 {repos && 
                     repos.map((item, index) => {
-                        return <RepositoriesCard key={index} reposItem={item} />
+                        return <RepositoriesCard 
+                                    key={index} 
+                                    reposItem={item}
+                                    modalVisible={() => modalVisible()}
+                                />
                     })
                 }
             </S.Cards>
