@@ -12,13 +12,6 @@ API pública do GitHub.
 
 - Página de Login
 
-A página de login possui dois campos de texto: email e senha, ao fazer o login, 
-o usuário será redirecionado para a página de feed.
-A página possui também um botão "Criar conta", que leva o usuário para a página 
-de cadastro.
-
-- Página de Login
-
 A interface contém os campos de entrada de dados “Login” e “Password” e um botão 
 para logar, assim o usuário será redirecionado para a página de busca de usuário.
 
