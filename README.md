@@ -50,4 +50,3 @@ rodar:
 
 1. `npm install` para instalar todas as dependências;
 1. `npm run start` para rodar localmente o projeto
-2. 
