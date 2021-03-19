@@ -1,7 +1,7 @@
 {
   "name": "teste-frontend",
   "version": "0.1.0",
-  "homepage": "https://marks-oliveira.github.io/test-page",
+  "homepage": "https://marks-oliveira.github.io/teste-frontend-smpd",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
