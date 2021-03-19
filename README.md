@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+## Stack
+Esse é um projeto de Frontend Web feito utilizando ReactJS, HTML e CSS; 
+e como gerenciador de pacotes do NodeJS o npm. Os arquivos estão divididos
+entre `components`(Header, Modal e RepositoriesCard) e as `pages` (Login,
+Repositories e UserSearch) que são as páginas em si do projeto. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sobre
 
-## Available Scripts
+O projeto consiste uma aplicação front-end de buscas de usuários cadastrados 
+no GitHub e exibir seus dados e repositórios criados. A aplicação consume uma
+API pública do GitHub.
 
-In the project directory, you can run:
+- Página de Login
 
-### `npm start`
+A página de login possui dois campos de texto: email e senha, ao fazer o login, 
+o usuário será redirecionado para a página de feed.
+A página possui também um botão "Criar conta", que leva o usuário para a página 
+de cadastro.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Página de Login
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+A interface contem os campos de entrada de dados “Login” e “Password” e um botão 
+para logar, assim o usuário será redirecionado para a página de busca de usuário.
 
-### `npm test`
+- Página de Busca de usuário
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A interface contém um cabeçalho, um campo de entrada de dados “Busca de usuário”, 
+um botão para buscar e um botão para limpar o campo de texto. Essa página só é 
+acessada por um usuário logado. Caso contrário, será redirecionado para a página 
+de login. O cabeçalho mostrará o usuário logado e um botão para deslogar que 
+irá redirecionar para a primeira interface. Ao informar um usuário no campo 
+“Busca de usuário” e clicar em buscar a aplicação irá fazer uma requisição para 
+a API do Github, com o resultado da requisição, irá exibir algumas informações do 
+usuário, assim como um botão “Repositórios” que redirecionará para a terceira 
+interface.
 
-### `npm run build`
+- Página de Repositórios
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A interface também possui um cabeçalho e uma listagem em cards de todos os 
+repositórios do usuário, ao clicar em um repositório irá abrir um modal com mais 
+informações do repositório. Essa página também só é acessada por um usuário logado.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Há integrações com APIs externas. Bibliotecas: axios, styled-components e 
+material-ui
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instruções para rodar
+Por ser um projeto com ReactJS, há a necessidade do NodeJS. Com ele em 
+sua máquina, basta abrir o terminal e navegar até o repositório clonado e 
+rodar:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. `npm install` para instalar todas as dependências;
+1. `npm run start` para rodar localmente o projeto
+2. 
