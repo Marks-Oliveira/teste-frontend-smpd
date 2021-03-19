@@ -6,9 +6,9 @@ Repositories e UserSearch) que são as páginas em si do projeto.
 
 ## Sobre
 
-O projeto consiste uma aplicação front-end de buscas de usuários cadastrados 
-no GitHub e exibir seus dados e repositórios criados. A aplicação consume uma
-API pública do GitHub.
+O projeto consiste em uma aplicação front-end de buscas de usuários cadastrados 
+no GitHub e exibir seus dados e repositórios criados. A aplicação consume APIs 
+públicas do GitHub.
 
 - Página de Login
 
