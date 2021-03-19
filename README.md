@@ -6,20 +6,13 @@ Repositories e UserSearch) que são as páginas em si do projeto.
 
 ## Sobre
 
-O projeto consiste uma aplicação front-end de buscas de usuários cadastrados 
-no GitHub e exibir seus dados e repositórios criados. A aplicação consume uma
-API pública do GitHub.
+O projeto consiste em uma aplicação front-end de buscas de usuários cadastrados 
+no GitHub e exibir seus dados e repositórios criados. A aplicação consume APIs 
+públicas do GitHub.
 
 - Página de Login
 
-A página de login possui dois campos de texto: email e senha, ao fazer o login, 
-o usuário será redirecionado para a página de feed.
-A página possui também um botão "Criar conta", que leva o usuário para a página 
-de cadastro.
-
-- Página de Login
-
-A interface contem os campos de entrada de dados “Login” e “Password” e um botão 
+A interface contém os campos de entrada de dados “Login” e “Password” e um botão 
 para logar, assim o usuário será redirecionado para a página de busca de usuário.
 
 - Página de Busca de usuário
@@ -50,3 +43,6 @@ rodar:
 
 1. `npm install` para instalar todas as dependências;
 1. `npm run start` para rodar localmente o projeto
+
+### Login e senha para acesso
+Login: `admin` Password: `password`
