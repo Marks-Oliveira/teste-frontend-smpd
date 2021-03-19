@@ -13,7 +13,7 @@ export const LogoGithub = styled.div`
     align-items: center;
 
     img {
-        width: 3%;
+        width: 2.5%;
         height: 100%;
         border-radius: 80px;
     }

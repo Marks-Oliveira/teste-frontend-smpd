@@ -59,7 +59,7 @@ const UserSearchPage = () => {
                             variant="outlined"
                             margin="normal"
                             size="small"
-                            label="Usuário"
+                            label="Busca de usuário"
                             autoFocus
                         />
                         <Button 

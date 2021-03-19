@@ -21,7 +21,7 @@ export const User = styled.article `
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 2rem;
+    padding-right: 3rem;
 
     span {
         margin-bottom: 5px;

@@ -86,12 +86,13 @@ export const User = styled.div`
 `
 
 export const UserInfos = styled.div`
-    width: 86.8%;
+    width: 90%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5rem;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
 
     p {
         margin: 0 2rem;

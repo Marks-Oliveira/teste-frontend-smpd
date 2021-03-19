@@ -33,6 +33,8 @@ const LoginPage = () => {
             history.replace(`/search/user/${login}`);
         } else {
             setError("Login ou senha inválido(s)");
+            setLogin("");
+            setPassword("");
         };
     };
 
