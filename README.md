@@ -19,7 +19,7 @@ de cadastro.
 
 - Página de Login
 
-A interface contem os campos de entrada de dados “Login” e “Password” e um botão 
+A interface contém os campos de entrada de dados “Login” e “Password” e um botão 
 para logar, assim o usuário será redirecionado para a página de busca de usuário.
 
 - Página de Busca de usuário
