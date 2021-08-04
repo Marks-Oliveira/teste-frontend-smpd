@@ -7,7 +7,7 @@ Repositories e UserSearch) que são as páginas em si do projeto.
 ## Sobre
 
 O projeto consiste em uma aplicação frontend de buscas de usuários cadastrados 
-no GitHub e exibir seus dados e repositórios criados.
+no GitHub e exibição de seus respectivos repositórios.
 
 - Página de Login
 
@@ -42,6 +42,9 @@ rodar:
 
 1. `npm install` para instalar todas as dependências;
 1. `npm run start` para rodar localmente o projeto
+
+### Link para visualização da página
+- https://difficult-range.surge.sh/
 
 ### Login e senha para acesso
 Login: `admin` Password: `password`
