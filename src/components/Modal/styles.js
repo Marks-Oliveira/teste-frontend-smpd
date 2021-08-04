@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
 `
 
 export const Container = styled.div`
-    width: 35%;
+    width: 40%;
     height: 20%;
     background-color: #fff;
     border-radius: 10px;
@@ -66,6 +66,7 @@ export const User = styled.div`
         width: 6%;
         height: 100%;
         border-radius: 80px;
+        margin-right: 1.2rem;
     }
 
     span {

@@ -18,7 +18,8 @@ const RepositoriesCard = ({reposItem, modalVisible}) => {
             <span>{reposItem.language}</span>
             {modal ? (
                 <Modal modalItem={reposItem} />
-            ) : null
+            ) 
+                : null
             }
         </S.Wrapper>
     );

@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 
 export const Container = styled.section`
     width: 30rem;
-    height: 22.6rem;
+    height: 23rem;
     background: #FFFFFF;
     border: 1px solid black;
     border-radius: 10px;

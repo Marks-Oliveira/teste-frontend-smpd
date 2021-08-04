@@ -7,21 +7,26 @@ export const Wrapper = styled.div`
     overflow: ${props => props.visible === true ? 'hidden' : 'visible'};
 `
 
-export const LogoGithub = styled.div`
-    padding: 5rem 4rem 0;
+export const UserGithub = styled.div`
+    margin: 7rem 4rem 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
-    img {
-        width: 2.5%;
-        height: 100%;
-        border-radius: 80px;
-    }
+    div {
+        display: flex;
+        align-items: center;
 
-    span {
-        padding-left: 5px;
-        font-size: 1.2rem;
-    }
+        img {
+            width: 5.5%;
+            border-radius: 80px;
+        }
+    
+        span {
+            padding-left: 5px;
+            font-size: 1.2rem;
+        }
+    };
 
     @media(max-width: 1080px) {
         font-size: .8rem;

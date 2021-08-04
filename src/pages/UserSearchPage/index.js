@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router';
+import { toast } from 'react-toastify';
 
 import Header from '../../components/Header';
 import api from '../../services/api';
@@ -16,7 +17,7 @@ const UserSearchPage = () => {
     const pathParams = useParams();
 
     useEffect(() => {
-        if (window.localStorage.getItem("loginInfo") === null) {
+        if (window.localStorage.getItem("@loginInfo") === null) {
             history.push("/");
         };
     }, [history]);
@@ -28,9 +29,9 @@ const UserSearchPage = () => {
             setUser(response.data);
         } catch(e) {
             if (e.response.status === 404) {
-                alert("Usuário não encontrado, digite corretamente");
+                toast.error("Usuário não encontrado, digite corretamente");
             } else {
-                alert("Falha ao pesquisar usuário");
+                toast.error("Falha ao pesquisar usuário");
             }
         }
     };
@@ -67,7 +68,12 @@ const UserSearchPage = () => {
                             size="medium" 
                             color="secondary"
                             onClick={handleSearchUser}
-                            style={{ marginTop: '8px' }}
+                            style={{ 
+                                background: "#212121", 
+                                color: "#fff",
+                                height: "2.6rem",
+                                marginTop: '8px'
+                            }}
                         >
                             Buscar
                         </Button>
@@ -76,7 +82,12 @@ const UserSearchPage = () => {
                             size="medium" 
                             color="secondary"
                             onClick={handleClearField}
-                            style={{ marginTop: '8px' }}
+                            style={{ 
+                                background: "#212121", 
+                                color: "#fff",
+                                height: "2.6rem",
+                                marginTop: '8px'
+                            }}
                         >
                             Limpar
                         </Button>
@@ -114,6 +125,11 @@ const UserSearchPage = () => {
                         size="small" 
                         color="secondary"
                         onClick={goToRepositoriesPage}
+                        style={{ 
+                            background: "#212121", 
+                            color: "#fff",
+                            height: "2.2rem"
+                        }}
                     >
                         Repositórios
                     </Button>
